@@ -1,0 +1,136 @@
+body {
+
+    font-family: "Oxanium", cursive;
+    color: #120b0b;
+}
+
+body::before {
+    content: "";
+    background-image: url(../imagens/bg-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  
+
+
+
+
+
+
+
+
+.cabecalho {
+
+    display: flex;
+    justify-content: center;
+}
+
+.selecao-de-personagens {
+
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    min-height: calc(100vh - 152px);
+    justify-content: center;
+
+}
+
+.selecao-de-personagens .lista-de-personagens {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+    justify-content: center;
+    margin: 30px;
+    max-width: 585px;
+    /* lagura maxima do elemento entre os personagem */
+
+
+
+}
+
+
+
+
+section .titulo {
+    background-color: darkslategray;
+
+    display: flex;
+    align-items: center;
+    /* toda vez que for flex-roll o align-items vai alinhar em coluna verticalmente */
+    justify-content: center;
+    /* toda vez que o contudo pai for flex-roll o justify vai alinha em linha */
+    height: 30px;
+    padding: 5px;
+    /* padding altera o expassamento interno do bloco ele pode ser left, right , top. bottom */
+    margin: 0px;
+    /* margem altera o expassamento do bloco legt,right,top,bottom*/
+
+
+
+
+
+
+}
+
+ul li {
+    list-style-type: none;
+    /* apaga os pontos da litas de personagem*/
+}
+
+.selecao-de-personagens .personagens .titulo {
+
+    font-size: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0bd8ef
+        /*a borda final em baixo do "selecione um personagem"*/
+
+}
+
+.lista-de-personagens .personagem img {
+
+    width: 100%;
+    height: 100%
+}
+
+.lista-de-personagens .personagem.selecionado {
+    box-shadow: 0px 0px 24px 5px #0271f7
+        /* a borda azul dos personagem "quando selecionar"*/
+
+}
+
+.personagem-selecionado {
+
+    text-align: center;
+    max-height: 530px;
+
+}
+.personagem-selecionado .personagem-grande{
+
+   width: 430px;
+   height: 430px;
+}
+.personagem-selecionado .nome-personagem {
+    border-bottom: 2px solid #47f4ff;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* deixa o a frase ou texto tudo maiusculo*/
+}
+.personagem-selecionado .descricao-personagem{
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    margin-top: 20px;
+    width: 420px;
+
+
+}
